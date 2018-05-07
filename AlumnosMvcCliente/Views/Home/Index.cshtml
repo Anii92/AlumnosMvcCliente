@@ -1,35 +1,46 @@
 ﻿@model IEnumerable<AlumnosMvcCliente.Models.Student>
 
 @{
-    ViewBag.Title = @Resources.Resource.studentList;
+    ViewBag.Title = "StudentList";
 }
 
-<h1>@ViewBag.Title</h1>
+<h2>StudentList</h2>
 
+<p>
+    @Html.ActionLink(Resources.Resource.createStudent, "Create")
+</p>
 <table class="table">
-    <thead>
-        <tr>
-            <th class="col-lg-1 col-md-1 col-sm-1 col-xs-1">@Resources.Resource.select</th>
-            <th class="col-lg-1 col-md-1 col-sm-1 col-xs-1">@Resources.Resource.id</th>
-            <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@Resources.Resource.name</th>
-            <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@Resources.Resource.surname</th>
-            <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@Resources.Resource.dni</th>
-            <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@Resources.Resource.age</th>
-            <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@Resources.Resource.registrationDate</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var student in Model)
-        {
-        <tr>
-            <td><input type="checkbox"></td>
-            <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@student.Id</td>
-            <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@student.Nombre</td>
-            <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@student.Apellidos</td>
-            <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@student.Dni</td>
-            <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@student.Edad</td>
-            <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2">@student.FechaHora</td>
-        </tr>
-        }
-    </tbody>
+    <tr>
+        <th>
+            @Resources.Resource.id
+        </th>
+        <th>
+            @Resources.Resource.name
+        </th>
+        <th>
+            @Resources.Resource.surname
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var student in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => student.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => student.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => student.Apellidos)
+        </td>
+        <td>
+            @Html.ActionLink(Resources.Resource.edit, "Edit", new { id = student.Id }) |
+            @Html.ActionLink(Resources.Resource.details, "Details", new { id = student.Id }) |
+            @Html.ActionLink(Resources.Resource.delete, "Delete", new { id = student.Id })
+        </td>
+    </tr>
+}
+
 </table>

@@ -1,0 +1,66 @@
+﻿@model AlumnosMvcCliente.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Resources.Resource.student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Resources.Resource.name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Resources.Resource.surname
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+
+        <dt>
+            @Resources.Resource.dni
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dni)
+        </dd>
+
+        <dt>
+            @Resources.Resource.birthday
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaNacimiento)
+        </dd>
+
+        <dt>
+            @Resources.Resource.age
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Edad)
+        </dd>
+
+        <dt>
+            @Resources.Resource.registrationDate
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaHora)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink(@Resources.Resource.edit, "Edit", new { id = Model.Id }) |
+    @Html.ActionLink(@Resources.Resource.backToList, "Index")
+</p>

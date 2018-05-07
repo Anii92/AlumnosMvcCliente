@@ -120,8 +120,26 @@
   <data name="age" xml:space="preserve">
     <value>Edad</value>
   </data>
+  <data name="backToList" xml:space="preserve">
+    <value>Ir al listado</value>
+  </data>
+  <data name="birthday" xml:space="preserve">
+    <value>Fecha de cumpleaños</value>
+  </data>
+  <data name="createStudent" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="details" xml:space="preserve">
+    <value>Ver</value>
+  </data>
   <data name="dni" xml:space="preserve">
     <value>Dni</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>Editar</value>
   </data>
   <data name="id" xml:space="preserve">
     <value>ID</value>
@@ -132,8 +150,14 @@
   <data name="registrationDate" xml:space="preserve">
     <value>Fecha de registro</value>
   </data>
+  <data name="save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
   <data name="select" xml:space="preserve">
     <value>Seleccionar</value>
+  </data>
+  <data name="student" xml:space="preserve">
+    <value>Alumno</value>
   </data>
   <data name="studentList" xml:space="preserve">
     <value>Listado de alumnos</value>

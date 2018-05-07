@@ -120,8 +120,26 @@
   <data name="age" xml:space="preserve">
     <value>Age</value>
   </data>
+  <data name="backToList" xml:space="preserve">
+    <value>Back to list</value>
+  </data>
+  <data name="birthday" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="createStudent" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="details" xml:space="preserve">
+    <value>Details</value>
+  </data>
   <data name="dni" xml:space="preserve">
     <value>ID card</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="id" xml:space="preserve">
     <value>ID</value>
@@ -132,8 +150,14 @@
   <data name="registrationDate" xml:space="preserve">
     <value>Registration date</value>
   </data>
+  <data name="save" xml:space="preserve">
+    <value>Save</value>
+  </data>
   <data name="select" xml:space="preserve">
     <value>Select</value>
+  </data>
+  <data name="student" xml:space="preserve">
+    <value>Student</value>
   </data>
   <data name="studentList" xml:space="preserve">
     <value>Student list</value>

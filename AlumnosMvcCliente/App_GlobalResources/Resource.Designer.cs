@@ -70,11 +70,65 @@ namespace AlumnosMvcCliente.App_GlobalResources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Ir al listado.
+        /// </summary>
+        public static string backToList {
+            get {
+                return ResourceManager.GetString("backToList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Fecha de cumpleaños.
+        /// </summary>
+        public static string birthday {
+            get {
+                return ResourceManager.GetString("birthday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Crear.
+        /// </summary>
+        public static string createStudent {
+            get {
+                return ResourceManager.GetString("createStudent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Borrar.
+        /// </summary>
+        public static string delete {
+            get {
+                return ResourceManager.GetString("delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ver.
+        /// </summary>
+        public static string details {
+            get {
+                return ResourceManager.GetString("details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Dni.
         /// </summary>
         public static string dni {
             get {
                 return ResourceManager.GetString("dni", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Editar.
+        /// </summary>
+        public static string edit {
+            get {
+                return ResourceManager.GetString("edit", resourceCulture);
             }
         }
         
@@ -106,11 +160,29 @@ namespace AlumnosMvcCliente.App_GlobalResources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Guardar.
+        /// </summary>
+        public static string save {
+            get {
+                return ResourceManager.GetString("save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Seleccionar.
         /// </summary>
         public static string select {
             get {
                 return ResourceManager.GetString("select", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Alumno.
+        /// </summary>
+        public static string student {
+            get {
+                return ResourceManager.GetString("student", resourceCulture);
             }
         }
         
